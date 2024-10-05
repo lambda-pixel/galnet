@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+<div class="home">
+    <ul class="post-list">
+        {% for episode in site.data.episodes %}
+        <li>
+            <span>{{ episode.date | date: "%-d %b %Y" }}</span>
+            <h3 class="post-title">
+                <a class="post-link" href="https://youtu.be/{{ episode.youtube }}">
+                    {{ episode.title | escape }}
+                </a>
+            </h3>
+            <span class="post-meta">CMDR {{ episode.cmdr }}</span>
+            <br>
+            <span><a href="https://youtu.be/{{ episode.youtube }}">🔊 YouTube</a></span>
+            <span>|</span>
+            <span><a href="https://community.elitedangerous.com/fr/galnet/{{ episode.date | date: '%d-%b-%Y' }}">📰 Elite</a></span>
+            <span>|</span>
+            <span><a href="{{ episode.galnet }}">📰 Galnet FR</a></span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
