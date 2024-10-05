@@ -27,6 +27,10 @@ layout: null
     <itunes:explicit>no</itunes:explicit>
     <itunes:keywords>Elite: Dangerous, Elite, Galnet</itunes:keywords>
 
+    <itunes:owner>
+      <itunes:email>galnet.tn2do@simplelogin.com</itunes:email>
+    </itunes:owner>
+
     {% for episode in site.data.episodes %}
     <item>
       <guid isPermaLink="true">{{ episode.date }}</guid>
