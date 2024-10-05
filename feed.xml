@@ -1,0 +1,41 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml"/>
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description }}</description>
+    <language>{{ site.lang }}</language>
+    <itunes:author>Galnet Radio FR</itunes:author>
+    <itunes:category text="Leisure" />
+    <itunes:category text="Video Games" />
+    <itunes:category text="News" />
+    <itunes:type>serial</itunes:type>
+    <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
+    <image>
+      <link>{{ site.url }}</link>
+      <title>{{ site.title }}</title>
+      <url>{{ 'assets/logo.png' | absolute_url }}</url>
+    </image>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:keywords>Elite: Dangerous, Elite, Galnet</itunes:keywords>
+
+    {% for episode in site.data.episodes %}
+    <item>
+      <guid isPermaLink="true">{{ episode.date }}</guid>
+      <title>{{ episode.title | escape }}</title>
+      <itunes:title>{{ episode.title | escape }}</itunes:title>
+      <enclosure length="{{episode.size}}" type="audio/mpeg" url="{{ 'assets/episodes/' | absolute_url }}{{ episode.date }}.mp3"/>
+      <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
