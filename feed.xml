@@ -31,6 +31,7 @@ layout: null
     <item>
       <guid isPermaLink="true">{{ episode.date }}</guid>
       <title>{{ episode.title | escape }}</title>
+      <link>{{ 'assets/episodes/' | absolute_url }}{{ episode.date }}.mp3</link>
       <enclosure length="{{ episode.size }}" type="audio/mpeg" url="{{ 'assets/episodes/' | absolute_url }}{{ episode.date }}.mp3"/>
       <itunes:title>{{ episode.title | escape }}</itunes:title>
       <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
