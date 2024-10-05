@@ -14,9 +14,9 @@ layout: null
     <description>{{ site.description }}</description>
     <language>{{ site.lang }}</language>
     <itunes:author>Galnet Radio FR</itunes:author>
-    <itunes:category text="Leisure" />
-    <itunes:category text="Video Games" />
-    <itunes:category text="News" />
+    <itunes:category text="Leisure">
+      <itunes:category text="Video Games" />
+    </itunes:category>
     <itunes:type>serial</itunes:type>
     <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
     <image>
@@ -31,9 +31,10 @@ layout: null
     <item>
       <guid isPermaLink="true">{{ episode.date }}</guid>
       <title>{{ episode.title | escape }}</title>
+      <enclosure length="{{ episode.size }}" type="audio/mpeg" url="{{ 'assets/episodes/' | absolute_url }}{{ episode.date }}.mp3"/>
       <itunes:title>{{ episode.title | escape }}</itunes:title>
-      <enclosure length="{{episode.size}}" type="audio/mpeg" url="{{ 'assets/episodes/' | absolute_url }}{{ episode.date }}.mp3"/>
       <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
+      <itunes:duration>{{ episode.duration }}</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     {% endfor %}
