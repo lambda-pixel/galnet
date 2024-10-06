@@ -35,11 +35,16 @@ layout: null
     <item>
       <guid isPermaLink="true">{{ episode.date }}</guid>
       <title>{{ episode.title | escape }}</title>
-      <link>{{ 'assets/episodes/' | absolute_url }}{{ episode.date }}.mp3</link>
+      <link>https://media.githubusercontent.com/media/lambda-pixel/galnet/refs/heads/master/assets/episodes/{{ episode.date }}.mp3</link>
+      {% assign reldate = episode.date | date: "%Y" | minus: 1286 | append: episode.date | date: "%b-%d" %}
+      <pubDate>{{ reldate | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
       <enclosure length="{{ episode.size }}" type="audio/mpeg" url="https://media.githubusercontent.com/media/lambda-pixel/galnet/refs/heads/master/assets/episodes/{{ episode.date }}.mp3"/>
       <itunes:title>{{ episode.title | escape }}</itunes:title>
       <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
       <itunes:duration>{{ episode.duration }}</itunes:duration>
+      {% for c in episode.cmdr %}
+      <itunes:author>{{ c }}</itunes:author>
+      {% endfor %}
       <itunes:episodeType>full</itunes:episodeType>
     </item>
     {% endfor %}
