@@ -8,4 +8,4 @@ Notre station diffuse sur ses ondes les actualités de Galnet en français. Il s
 
 Notre rédaction est toujours à la recherche de nouvelles voix pour diffuser l'actualité galactique !
 
-N'hésitez pas à rejoindre notre Discord pour en savoir plus https://discord.gg/ubSDgV5uNn.
+N'hésitez pas à rejoindre notre Discord pour en savoir plus [https://discord.gg/ubSDgV5uNn](https://discord.gg/ubSDgV5uNn).
