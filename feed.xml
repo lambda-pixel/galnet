@@ -7,46 +7,9 @@ layout: null
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-  <channel>
-    <atom:link href="{{ '/feed.xml' | absolute_url }}" rel="self" type="application/rss+xml"/>
-    <title>{{ site.title }}</title>
-    <link>{{ site.url }}</link>
-    <description>{{ site.description }}</description>
-    <language>{{ site.lang }}</language>
-    <itunes:author>Galnet Radio FR</itunes:author>
-    <itunes:category text="Leisure">
-      <itunes:category text="Video Games" />
-    </itunes:category>
-    <itunes:type>serial</itunes:type>
-    <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
-    <image>
-      <link>{{ site.url }}</link>
-      <title>{{ site.title }}</title>
-      <url>{{ 'assets/logo.png' | absolute_url }}</url>
-    </image>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:keywords>Elite: Dangerous, Elite, Galnet</itunes:keywords>
-
-    <itunes:owner>
-      <itunes:email>galnet.tn2do@simplelogin.com</itunes:email>
-    </itunes:owner>
-
-    {% for episode in site.data.episodes %}
-    <item>
-      <guid isPermaLink="true">{{ episode.date }}</guid>
-      <title>{{ episode.title | escape }}</title>
-      <link>https://media.githubusercontent.com/media/lambda-pixel/galnet/refs/heads/master/assets/episodes/{{ episode.date }}.mp3</link>
-      {% assign reldate = episode.date | date: "%Y" | minus: 1286 | append: episode.date | date: "%b-%d" %}
-      <pubDate>{{ reldate | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
-      <enclosure length="{{ episode.size }}" type="audio/mpeg" url="https://media.githubusercontent.com/media/lambda-pixel/galnet/refs/heads/master/assets/episodes/{{ episode.date }}.mp3"/>
-      <itunes:title>{{ episode.title | escape }}</itunes:title>
-      <itunes:image href="{{ 'assets/logo.png' | absolute_url }}"/>
-      <itunes:duration>{{ episode.duration }}</itunes:duration>
-      {% for c in episode.cmdr %}
-      <itunes:author>{{ c }}</itunes:author>
-      {% endfor %}
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-    {% endfor %}
-  </channel>
+  <redirect>
+    <newLocation>
+      https://galnet.elitedangereuse.fr/feed.xml
+    </newLocation>
+  </redirect>
 </rss>
