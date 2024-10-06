@@ -12,7 +12,11 @@ layout: base
                     {{ episode.title | escape }}
                 </a>
             </h3>
-            <span class="post-meta">CMDR {{ episode.cmdr }}</span>
+            <span class="post-cmdr">{{ episode.cmdr[0] }}</span>
+            {% for c in episode.cmdr offset:1 %}
+                <span class="post-meta">, </span>
+                <span class="post-cmdr">{{ c }}</span>
+            {% endfor %}
             <br>
             <span><a href="https://youtu.be/{{ episode.youtube }}">🔊 YouTube</a></span>
             <span>|</span>

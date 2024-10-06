@@ -3,7 +3,8 @@
   title: Le spatioport Jameson Memorial est opérationnel
   galnet: https://news.galnet.fr/le-spatioport-jameson-memorial-est-operationnel/
   youtube: NlfUDZaI_To
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr: 
+  - SIEGFRIED-ORIGIN
   size: 2838922
   duration: 118.256327
 
@@ -12,7 +13,8 @@
   title: Victoire de la flotte de défense de Shinrarta Dezhra
   galnet: https://news.galnet.fr/victoire-de-la-flotte-de-defense-de-shinrarta-dezhra/
   youtube: S2EOx2xyb_0
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 2438940
   duration: 101.590204
 
@@ -21,7 +23,8 @@
   title: Une flotte thargoid envahit Shinrarta Dezhra
   galnet: https://news.galnet.fr/une-flotte-thargoid-envahit-shinrarta-dezhra/
   youtube: FdJKtjeJwDQ
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 2830141
   duration: 117.890612
 
@@ -30,7 +33,8 @@
   title: Winters réagit aux appels croissants qui exigent son investiture
   galnet: https://news.galnet.fr/winters-reagit-aux-appels-croissants-qui-exigent-son-investiture/
   youtube: eFqWW7f4v1s
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 3819472
   duration: 159.111837
 
@@ -39,7 +43,8 @@
   title: Le cours de l’action Sirius fluctue après des actes frôlant « l’obsession »
   galnet: https://news.galnet.fr/le-cours-de-laction-sirius-fluctue-apres-des-actes-frolant-lobsession/
   youtube: 9Sg2r8xc5Gs
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 3428280
   duration: 142.811429
 
@@ -48,7 +53,8 @@
   title: Aegis invite à redoubler de vigilance face aux Thargoids
   galnet: https://news.galnet.fr/aegis-invite-a-redoubler-de-vigilance-face-aux-thargoids/
   youtube: HJIih82toaw
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 2906641
   duration: 121.077551
 
@@ -57,7 +63,8 @@
   title: Jerome Archer et Nakato Kaine engrangent les ralliements
   galnet: https://news.galnet.fr/jerome-archer-et-nakato-kaine-engrangent-les-ralliements/
   youtube: rj14wrlo9lY
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 3255218
   duration: 135.601633
 
@@ -66,6 +73,7 @@
   title: Le gang de Kumo revendique la responsabilité de l'attentat de Nanomam 1
   galnet: https://news.galnet.fr/le-gang-de-kumo-revendique-la-responsabilite-de-lattentat-de-nanomam-1/
   youtube: Sx8sAha4HpQ
-  cmdr: SIEGFRIED-ORIGIN
+  cmdr:
+  - SIEGFRIED-ORIGIN
   size: 2827035
   duration: 117.760000
