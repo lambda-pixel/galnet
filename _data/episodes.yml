@@ -1,3 +1,13 @@
+- date: 3310-10-16
+  title: Les débris des Titans thargoids pourraient détenir la clé des grandes avancées scientifiques de demain
+  galnet: https://news.galnet.fr/les-debris-des-titans-thargoids-pourraient-detenir-la-cle-des-grands-avancees-scientifiques-de-demain/
+  youtube: mWDWzGr2Kvg
+  cmdr:
+  - Adam Fauster
+  size: 3184437
+  duration: 117.760000
+
+
 - date: 3310-10-15
   title: Nouveau navire d'exploration dévoilé lors d'une soirée organisée par Zorgon Peterson
   galnet: https://news.galnet.fr/nouveau-navire-dexploration-devoile-lors-dune-soiree-organisee-par-zorgon-peterson/
@@ -12,7 +22,7 @@
   title: Le spatioport Jameson Memorial est opérationnel
   galnet: https://news.galnet.fr/le-spatioport-jameson-memorial-est-operationnel/
   youtube: NlfUDZaI_To
-  cmdr: 
+  cmdr:
   - SIEGFRIED-ORIGIN
   size: 2838922
   duration: 118.256327
@@ -48,16 +58,6 @@
   duration: 159.111837
 
 
-- date: 3310-09-03
-  title: Le cours de l’action Sirius fluctue après des actes frôlant « l’obsession »
-  galnet: https://news.galnet.fr/le-cours-de-laction-sirius-fluctue-apres-des-actes-frolant-lobsession/
-  youtube: 9Sg2r8xc5Gs
-  cmdr:
-  - SIEGFRIED-ORIGIN
-  size: 3428280
-  duration: 142.811429
-
-
 - date: 3310-09-10
   title: Aegis invite à redoubler de vigilance face aux Thargoids
   galnet: https://news.galnet.fr/aegis-invite-a-redoubler-de-vigilance-face-aux-thargoids/
@@ -66,6 +66,16 @@
   - SIEGFRIED-ORIGIN
   size: 2906641
   duration: 121.077551
+
+
+- date: 3310-09-03
+  title: Le cours de l’action Sirius fluctue après des actes frôlant « l’obsession »
+  galnet: https://news.galnet.fr/le-cours-de-laction-sirius-fluctue-apres-des-actes-frolant-lobsession/
+  youtube: 9Sg2r8xc5Gs
+  cmdr:
+  - SIEGFRIED-ORIGIN
+  size: 3428280
+  duration: 142.811429
 
 
 - date: 3310-08-29
